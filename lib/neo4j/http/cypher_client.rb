@@ -104,7 +104,7 @@ module Neo4j
       def authentication_headers
         return {} if auth_token.blank?
 
-        {"Authentication" => "Basic #{auth_token}"}
+        {"Authorization" => "Basic #{auth_token}"}
       end
     end
   end
